@@ -17,6 +17,7 @@
       "bundleIdentifier": "com.btltv.mobile",
       "infoPlist": {
         "UIBackgroundModes": [
+          "audio",
           "audio"
         ]
       }
@@ -43,6 +44,12 @@
       "eas": {
         "projectId": "6dc21843-cb64-4daf-940b-47b041d639d3"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6dc21843-cb64-4daf-940b-47b041d639d3"
     }
   }
 }
