@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { I18nProvider } from '../lib/i18n';
 import { supabase } from '../lib/supabase';
 import { useAuthStore } from '../lib/store';
+import { registerForPushNotifications } from '../lib/notifications';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -37,6 +38,7 @@ export default function RootLayout() {
         setProfile(null);
       }
     });
+    registerForPushNotifications();
     return () => subscription.unsubscribe();
   }, []);
 
